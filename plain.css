@@ -10,11 +10,18 @@ nav i{
     margin:10px;
     padding:20px;
 }
-#features, #feature{
+#features, #feature, #start{
     background-image: url("./images/bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
+}
+#nd{
+    background-image: url("./images/bg2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    padding: 10%;
 }
 #btn button{
     outline:none;
@@ -40,4 +47,43 @@ nav i{
     flex-wrap: nowrap;
     overflow-x: auto;
     justify-content: center;
+}
+#get, #get2{
+    background-color: white;
+    border: 1px blue;
+}
+#get:hover,#get2:hover{
+    background-color: rgb(208, 245, 245);
+}
+#start{
+    padding:10%;
+    padding-left: 20%;
+    padding-right:20%;
+}
+#world{
+    margin-top: 5%;
+}
+#cap{
+    color: gray;
+}
+.card{
+    border: 1px solid gainsboro;
+    box-shadow: 4px 4px 10px rgba(66, 65, 65, 0.3);
+    margin: 5%;
+}
+.quote{
+    background: url("./images/luxaorg.png");
+    background-repeat: no-repeat; 
+    background-position: top left; 
+    background-size: auto;
+}
+.crd{
+    padding: 0 5px;
+}
+.liste li{
+    font-weight: 200;
+}
+#is i:hover{
+    color:black;
+    cursor: pointer;
 }
