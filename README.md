@@ -1,8 +1,8 @@
 # TaxPal Clone
 This is my attempt at the TaxPal website for Bytewise fellowship
 
-### Completion Status:
-The site is currently incomplete, I am trying to finish it ASAP.
+### Orignal:
+[Link](https://salient.tailwindui.com/)
 
 ## Site Link:
 [Live Link](https://mahrukh-adeel.github.io/taxpal-clone/)
