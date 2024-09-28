@@ -19,10 +19,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
+    height: 100vh;
+    width: 100vw;
 }
 </style>
-<body class="">
-    <div class="lg:flex lg:flex-row flex items-center justify-center  lg:bg-none md:bg-[url('./images/bg3.jpg')] md:bg-no-repeat md:bg-center md:h-screen md:bg-cover">
+<body class="bg-blue-00">
+    <div class="lg:flex lg:flex-row flex items-center justify-center  lg:bg-none md:bg-[url('./images/bg3.jpg')] md:bg-no-repeat md:bg-center md:h-full md:bg-cover">
         <div class="bg-white h-screen mt-5 md:mt-0 p-10 md:p-20 w-[60%] md:">
             <a href="index.html" class="">
                 <div class="flex flex-row items-center"> 
@@ -33,23 +35,36 @@
                 </div>
             </a> 
             <div class="pt-8 mt-5 text-lg">
-                <h1 class="py-2">Sign in to your account</h1>
+                <h1 class="py-2">Get started for free</h1>
                 <p class="py-2 font-normal text-sm">
-                    Don’t have an account? <a href="start.html" class="text-blue-600">Sign up</a> for a free trial.
+                    Already registered? <a href="sign.html" class="text-blue-600">Sign in</a> to your account
                 </p>
             </div>
-            <div class="pt-10">
+            <div class="pt-10 pb-20">
                 <form action="" class="flex flex-col">
+                    <div class="grid grid-cols-2 gap-x-2 mb-5">
+                        <label for="fname" class="text-sm font-[450]">First name</label>
+                        <label for="lname" class="text-sm font-[450]">Last name</label>
+                        <input type="text" class="rounded-lg border border-gray-300 p-2 mt-2 focus:border-blue-600 focus:bg-white bg-slate-100 outline-none font-normal" required id="fname" name="fname">
+                        <input type="text" class="rounded-lg border border-gray-300 p-2 mt-2 focus:border-blue-600 focus:bg-white bg-slate-100 outline-none font-normal" required id="lname" name="fname">
+                    </div>
                     <label for="email" class="text-sm font-[450]">Email address</label>
-                    <input type="text" id="email" class="rounded-lg border border-gray-300 p-2 mt-2 focus:border-blue-600 focus:bg-white font-normal bg-slate-100 outline-none" required name="email">
+                    <input type="text" id="email" class="rounded-lg border border-gray-300 p-2 mt-2 focus:border-blue-600 focus:bg-white bg-slate-100 font-normal outline-none" required name="email">
                     <label for="pass" class="pt-6 text-sm font-[450]">Password</label>
-                    <input type="password" id="pass" class="rounded-lg border font-normal border-gray-300 p-2 mt-2 focus:border-blue-600 focus:bg-white bg-slate-100 outline-none" required name="pass">
+                    <input type="password" id="pass" class="rounded-lg border border-gray-300 p-2 mt-2 focus:border-blue-600 focus:bg-white bg-slate-100  font-normal outline-none" required name="pass">
+                    <label for="heard" class="pt-6 text-sm font-[450]">How did you hear about us?
+                    </label>
+                    <select class="rounded-lg border border-gray-300 p-2 mt-2 focus:border-blue-600 focus:bg-white bg-slate-100  font-normal outline-none" name="heard">
+                        <option value="altavista" selected>AltaVista search</option>
+                        <option value="super">Super Bowl commercial</option>
+                        <option value="route">Our route 34 city bus ad</option>
+                        <option value="podcast">The "Never Use This" podcast</option>
+                      </select>
                     <button class="mt-8 bg-blue-600 text-white rounded-3xl px-[14px] py-[8px] hover:cursor-pointer hover:bg-blue-500 font-normal text-sm">Sign in <i class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></button>
                 </form>
             </div>
         </div>
-        <div id="im" class="hidden lg:block h-screen w-full"></div>
+        <div id="im" class="hidden lg:block min-h-screen w-full"></div>
     </div> 
-    <div id="" class=""></div>
 </body>
 </html>
