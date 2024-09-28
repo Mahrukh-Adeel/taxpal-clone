@@ -22,10 +22,14 @@
     height: 100vh;
     width: 100vw;
 }
+select option:checked {
+    background-color: rgb(70, 103, 250);
+    color:white;
+}
 </style>
 <body class="bg-blue-00">
-    <div class="lg:flex lg:flex-row flex items-center justify-center  lg:bg-none md:bg-[url('./images/bg3.jpg')] md:bg-no-repeat md:bg-center md:h-full md:bg-cover">
-        <div class="bg-white h-screen mt-5 md:mt-0 p-10 md:p-20 w-[60%] md:">
+    <div class="lg:flex lg:justify-start flex items-center justify-center  lg:bg-cyan-100 md:bg-[url('./images/bg3.jpg')] md:bg-no-repeat md:bg-center md:h-full md:bg-cover">
+        <div class="bg-white h-full mt-5 md:mt-0 p-10 md:p-20 w-[50%] md:">
             <a href="index.html" class="">
                 <div class="flex flex-row items-center"> 
                     <i class="fa-solid fa-circle-half-stroke text-blue-600 fa-2x hover:cursor-pointer transform rotate-90"></i>
@@ -60,11 +64,11 @@
                         <option value="route">Our route 34 city bus ad</option>
                         <option value="podcast">The "Never Use This" podcast</option>
                       </select>
-                    <button class="mt-8 bg-blue-600 text-white rounded-3xl px-[14px] py-[8px] hover:cursor-pointer hover:bg-blue-500 font-normal text-sm">Sign in <i class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></button>
+                    <button class="mt-8 active:bg-blue-800 bg-blue-600 text-white rounded-3xl px-[14px] py-[8px] hover:cursor-pointer hover:bg-blue-500 font-normal text-sm">Sign in <i class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></button>
                 </form>
             </div>
         </div>
-        <div id="im" class="hidden lg:block min-h-screen w-full"></div>
+        <!-- <div id="im" class="hidden lg:block min-h-screen w-full"></div> -->
     </div> 
 </body>
 </html>
